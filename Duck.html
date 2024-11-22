@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck</title>
+    <link rel="stylesheet" href="./assents/style.css">
+    <link rel="icon" href="assents/duckFavicon.ico" type="image/x-icon"> 
+</head>
+<body>
+    <h1>Question number 2 - creating a duck</h1>
+    <form id="duckForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="color" placeholder="Color" required>
+        <input type="text" id="age" placeholder="Age" required>
+        <input type="text" id="weight" placeholder="Weight" required>
+        <input type="file" id="image" accept="image/*" required>
+        <button type="submit" id="createDuckButton">Creating a duck</button>
+    </form>
+
+    <button id="showButton" disabled>Show</button>
+    <button id="quackButton" disabled>Quack</button>
+
+    <p id="duckInfo"></p>
+
+    <p id="quackDisplay"></p>
+
+    <script src="js/Duck.js"></script>
+</body>
+</html>
