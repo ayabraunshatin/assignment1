@@ -16,28 +16,34 @@
   </head>
   <body>
     <h1>Question number 4 - point</h1>
+    <div id="pointsList" style="margin: 20px"></div>
     <div class="form-container">
       <input type="text" id="x" placeholder="x value" />
       <input type="text" id="y" placeholder="y value" />
       <button onclick="addPoint()">Add new point</button>
     </div>
 
-    <div class="output-container">
-      <div id="pointsList"></div>
-    </div>
+    <div class="output-container"></div>
 
     <div class="form-container">
       <input type="text" id="checkX" placeholder="x value" />
       <input type="text" id="checkY" placeholder="y value" />
-      <button onclick="checkPoint()">Chack if exsits</button>
+      <button id="checkExistsBttn">Check if exists</button>
       <div id="checkResult"></div>
+    </div>
+
+    <div class="form-container">
+      <input type="text" id="checkQX" placeholder="x value" />
+      <input type="text" id="checkQY" placeholder="y value" />
+      <button id="checkExistsEqualsBttn">Check if equals</button>
+      <div id="checkResultEquals"></div>
     </div>
 
     <div class="form-container">
       <button onclick="calculatePath()">
         Calculate the length of the Path
       </button>
-      <div id="pathLength"></div>
+      <div id="pathLength" style="margin: 20px"></div>
     </div>
 
     <div class="form-container">
