@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Point</title>
-    <link rel="stylesheet" href="./assents/style.css">
-    <link rel="icon" href="assents/graphFabicom.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="icon" href="assets/graphFabicom.ico" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        canvas {
-            width: 100%;
-            height: 400px;
-        }
+      canvas {
+        width: 100%;
+        height: 400px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Question number 4 - point</h1>
+    <div id="pointsList" style="margin: 20px"></div>
     <div class="form-container">
-        <input type="text" id="x" placeholder="x value">
-        <input type="text" id="y" placeholder="y value">
-        <button onclick="addPoint()">Add new point</button>
+      <input type="text" id="x" placeholder="x value" />
+      <input type="text" id="y" placeholder="y value" />
+      <button onclick="addPoint()">Add new point</button>
     </div>
 
-    <div class="output-container">
-        <div id="pointsList"></div>
-    </div>
+    <div class="output-container"></div>
 
     <div class="form-container">
-        <input type="text" id="checkX" placeholder="x value">
-        <input type="text" id="checkY" placeholder="y value">
-        <button onclick="checkPoint()">Chack if exsits</button>
-        <div id="checkResult"></div>
-    </div>
-
-    <div class="form-container">
-        <button onclick="calculatePath()">Calculate the length of the Path</button>
-        <div id="pathLength"></div>
+      <input type="text" id="checkX" placeholder="x value" />
+      <input type="text" id="checkY" placeholder="y value" />
+      <button id="checkExistsBttn">Check if exists</button>
+      <div id="checkResult"></div>
     </div>
 
     <div class="form-container">
-        <canvas id="lineChart"></canvas>
+      <input type="text" id="checkQX" placeholder="x value" />
+      <input type="text" id="checkQY" placeholder="y value" />
+      <button id="checkExistsEqualsBttn">Check if equals</button>
+      <div id="checkResultEquals"></div>
+    </div>
+
+    <div class="form-container">
+      <button onclick="calculatePath()">
+        Calculate the length of the Path
+      </button>
+      <div id="pathLength" style="margin: 20px"></div>
+    </div>
+
+    <div class="form-container">
+      <canvas id="lineChart"></canvas>
     </div>
 
     <script src="js/Point.js"></script>
-</body>
+  </body>
 </html>

@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Duck</title>
-    <link rel="stylesheet" href="./assents/style.css">
-    <link rel="icon" href="assents/duckFavicon.ico" type="image/x-icon"> 
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="icon" href="assets/duckFavicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Question number 2 - creating a duck</h1>
     <form id="duckForm">
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="text" id="color" placeholder="Color" required>
-        <input type="text" id="age" placeholder="Age" required>
-        <input type="text" id="weight" placeholder="Weight" required>
-        <input type="file" id="image" accept="image/*" required>
-        <button type="submit" id="createDuckButton">Creating a duck</button>
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="color" placeholder="Color" required />
+      <input type="text" id="age" placeholder="Age" required />
+      <input type="text" id="weight" placeholder="Weight" required />
+      <input type="file" id="image" accept="image/*" required />
+      <button type="submit" id="createDuckButton">Creating a duck</button>
     </form>
 
     <button id="showButton" disabled>Show</button>
     <button id="quackButton" disabled>Quack</button>
 
-    <p id="duckInfo"></p>
+    <div id="duckInfo"></div>
 
-    <p id="quackDisplay"></p>
+    <div id="quackDisplay"></div>
 
     <script src="js/Duck.js"></script>
-</body>
+  </body>
 </html>

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock</title>
-    <link rel="stylesheet" href="assents/style.css">
-    <link rel="icon" href="assents/clockFabicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="assets/clockFabicon.ico" type="image/x-icon" />
     <style>
-        .clock-display {
-            margin-top: 20px;
-            font-size: 18px;
-        }
+      .clock-display {
+        margin-top: 20px;
+        font-size: 18px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Question number 3 - Clock</h1>
-    
-    <form id="clockForm">
-        <input type="text" id="hours" placeholder="Hours" required>
-        <input type="text" id="minutes" placeholder="Minutes" required>
-        <input type="text" id="seconds" placeholder="Seconds" required>
-        <input type="text" id="country" placeholder="Country"required>
-        <button type="submit">Add clock</button>
+    <span>Number of clocks created:</span>
+    <span id="clockCount">0</span>
+    <form id="clockForm" style="margin: 20px">
+      <input type="text" id="hours" placeholder="Hours" required />
+      <input type="text" id="minutes" placeholder="Minutes" required />
+      <input type="text" id="seconds" placeholder="Seconds" required />
+      <input type="text" id="country" placeholder="Country" required />
+      <button type="submit" id="submitClock">Add clock</button>
     </form>
-
     <div id="clockList" class="clock-display"></div>
 
     <script src="js/Clock.js"></script>
-</body>
+  </body>
 </html>
